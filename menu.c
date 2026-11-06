@@ -44,7 +44,7 @@ pos_mouse_y = GetMouseY();
 	    //fim do segundo botao
 	    DrawPixel(174,230, RED);
 
-if((IsMouseButtonPressed(MOUSE_BUTTON_LEFT) && ((pos_mouse_x > 173) && (pos_mouse_x < 621))) && ((pos_mouse_y > 229) && (pos_mouse_y < 311)) {sair =1;};
+if(IsMouseButtonPressed(MOUSE_BUTTON_LEFT) && (pos_mouse_x > 173) && (pos_mouse_x < 621) && (pos_mouse_y > 229) && (pos_mouse_y < 311)) {sair =1;};
         EndDrawing();
         //----------------------------------------------------------------------------------
     }
