@@ -29,7 +29,7 @@ pos_mouse = GetMousePosition();
 
             DrawText("Iniciar jogo", 350, 350, 50, LIGHTGRAY);
             DrawText("Sair do jogo", 350, 200, 50, LIGHTGRAY);
-if(IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {sair =1};;
+if(IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {sair =1;};
         EndDrawing();
         //----------------------------------------------------------------------------------
     }
