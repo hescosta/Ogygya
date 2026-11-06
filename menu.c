@@ -7,7 +7,8 @@ int main(void)
     const int screenWidth = 800;
     const int screenHeight = 450;
     int sair=0;
-    Vector2 pos_mouse = {0.0f, 0.0f};
+    int pos_mouse_x;
+	int pos_mouse_y;
     InitWindow(screenWidth, screenHeight, "raylib [core] example - basic window");
 
     SetTargetFPS(60);               // Set our game to run at 60 frames-per-second
@@ -24,7 +25,8 @@ int main(void)
         // Draw
         //----------------------------------------------------------------------------------
         BeginDrawing();
-pos_mouse = GetMousePosition();
+pos_mouse_x = GetMouseX();
+pos_mouse_y = GetMouseY();
             ClearBackground(RAYWHITE);
 
             DrawText("Iniciar jogo", 200, 130, 70, BLACK);
@@ -42,7 +44,7 @@ pos_mouse = GetMousePosition();
 	    //fim do segundo botao
 	    DrawPixel(174,230, RED);
 
-if(IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {sair =1;};
+if((IsMouseButtonPressed(MOUSE_BUTTON_LEFT) && ((pos_mouse_x > 173) && (pos_mouse_x < 621))) && ((pos_mouse_y > 229) && (pos_mouse_y < 311)) {sair =1;};
         EndDrawing();
         //----------------------------------------------------------------------------------
     }
