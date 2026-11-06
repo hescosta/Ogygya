@@ -1,6 +1,6 @@
 #include "raylib.h"
 
-nt main(void)
+int main(void)
 {
     // Initialization
     //--------------------------------------------------------------------------------------
