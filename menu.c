@@ -24,12 +24,12 @@ Vector2 pos_mouse = {0.0f, 0.0f};
         // Draw
         //----------------------------------------------------------------------------------
         BeginDrawing();
-pos_mouse = GetMousePosition()
+pos_mouse = GetMousePosition();
             ClearBackground(RAYWHITE);
 
             DrawText("Iniciar jogo", 350, 350, 50, LIGHTGRAY);
             DrawText("Sair do jogo", 350, 200, 50, LIGHTGRAY);
-if(IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {sair =1};
+if(IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {sair =1};;
         EndDrawing();
         //----------------------------------------------------------------------------------
     }
