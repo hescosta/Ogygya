@@ -27,7 +27,7 @@ nt main(void)
             ClearBackground(RAYWHITE);
 
             DrawText("Iniciar jogo", 400, 200, 20, LIGHTGRAY);
-            Drawtext("Sair do jogo", 400, 300, 20, LIGHTGRAY);
+            DrawText("Sair do jogo", 400, 300, 20, LIGHTGRAY);
 
         EndDrawing();
         //----------------------------------------------------------------------------------
