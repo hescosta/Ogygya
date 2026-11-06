@@ -27,7 +27,7 @@ Vector2 pos_mouse = {0.0f, 0.0f};
 pos_mouse = GetMousePosition();
             ClearBackground(RAYWHITE);
 
-            DrawText("Iniciar jogo", 250, 400, 50, BLACK);
+            DrawText("Iniciar jogo", 250, 200, 50, BLACK);
             DrawText("Sair do jogo", 250, 300, 50, BLACK);
 if(IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {sair =1;};
         EndDrawing();
