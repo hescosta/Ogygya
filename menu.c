@@ -1,5 +1,7 @@
 #include "raylib.h"
 #include <stdio.h>
+#include "mapa.h"
+
 int main(void)
 {
     // Initialization
@@ -17,7 +19,7 @@ int main(void)
     // Main game loop
     while (sair ==0)  // Checa se o valor que determina saida mudou
     {
-        // Update
+	// Update
         //----------------------------------------------------------------------------------
         // TODO: Update your variables here
         //----------------------------------------------------------------------------------
@@ -25,28 +27,35 @@ int main(void)
         // Draw
         //----------------------------------------------------------------------------------
         BeginDrawing();
-pos_mouse_x = GetMouseX();
-pos_mouse_y = GetMouseY();
-            ClearBackground(RAYWHITE);
+	pos_mouse_x = GetMouseX();
+	pos_mouse_y = GetMouseY();
+        ClearBackground(RAYWHITE);
 
-            DrawText("Iniciar jogo", 200, 130, 70, BLACK);
-            DrawText("Sair do jogo", 190, 230, 70, BLACK);
+        DrawText("Iniciar jogo", 200, 130, 70, BLACK);
+        DrawText("Sair do jogo", 190, 230, 70, BLACK);
+	
+	//testando grade do mapa, imprimindo retangulos 
+	for (int i=0; i<10; i++){
+		for (int j=0; j<10; j++){
+		DrawRectangleLines(i*30, j*30, 30, 30, RED);
+		}
+	}
 
-	    //inicio do primeiro botao
-	    DrawPixel(190, 130, RED);
+	//inicio do primeiro botao
+	DrawPixel(190, 130, RED);
 
-	    //fim do primeiro botao
-	    DrawPixel(610, 210, RED);
+	//fim do primeiro botao
+	DrawPixel(610, 210, RED);
         //inicio do segundo botao
-	    DrawPixel(174,230, RED);
-	    //fim do segundo botao
-	    DrawPixel(620,310, RED);
+	DrawPixel(174,230, RED);
+	//fim do segundo botao
+	DrawPixel(620,310, RED);
 
 	
-	    // Botao de 'Sair do Jogo'
-            if(IsMouseButtonPressed(MOUSE_BUTTON_LEFT) && (pos_mouse_x > 173) && (pos_mouse_x < 621) && (pos_mouse_y > 229) && (pos_mouse_y < 311)) {sair =1;};
+	// Botao de 'Sair do Jogo'
+        if(IsMouseButtonPressed(MOUSE_BUTTON_LEFT) && (pos_mouse_x > 173) && (pos_mouse_x < 621) && (pos_mouse_y > 229) && (pos_mouse_y < 311)) {sair =1;};
 	    // Botao de 'Iniciar Jogo'
-if(IsMouseButtonPressed(MOUSE_BUTTON_LEFT) && (pos_mouse_x > 189) && (pos_mouse_x < 611) && (pos_mouse_y > 131) && (pos_mouse_y < 209)) {sair =1;};
+	if(IsMouseButtonPressed(MOUSE_BUTTON_LEFT) && (pos_mouse_x > 189) && (pos_mouse_x < 611) && (pos_mouse_y > 131) && (pos_mouse_y < 209)) {sair =1;};
         EndDrawing();
         //----------------------------------------------------------------------------------
     }
