@@ -8,3 +8,4 @@ Não precisamos nos preocupar com menu e outros detalhes agora, depois podemos i
 
 O raylib parece não ter uma maneira padrão de construir uma grade de células, portanto devemos utilizar uma matriz pra representar a grade e o estado de cada célula, e utilizar o raylib para fazer uma representação gŕafica dessa grade. 
 
+

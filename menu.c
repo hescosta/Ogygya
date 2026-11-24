@@ -10,8 +10,14 @@ int main(void)
     const int screenHeight = 450;
     int sair=0;
     int pos_mouse_x;
-	int pos_mouse_y;
+    int pos_mouse_y;
+    int matrix[10][10] = {0};
     InitWindow(screenWidth, screenHeight, "raylib [core] example - basic window");
+
+    matrix[4][3] = 1;
+    matrix[3][1] = 1;
+    matrix[7][5] = 1;
+    matrix[9][8] = 1;
 
     SetTargetFPS(60);               // Set our game to run at 60 frames-per-second
     //--------------------------------------------------------------------------------------
@@ -37,7 +43,12 @@ int main(void)
 	//testando grade do mapa, imprimindo retangulos 
 	for (int i=0; i<10; i++){
 		for (int j=0; j<10; j++){
-		DrawRectangleLines(i*30, j*30, 30, 30, RED);
+			if(matrix[i][j]==0){
+				DrawRectangleLines(i*30, j*30, 30, 30, RED);
+			}else{
+				DrawRectangle(i*30, j*30, 30, 30, RED);
+				
+			}
 		}
 	}
 
