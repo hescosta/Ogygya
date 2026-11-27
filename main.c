@@ -16,7 +16,7 @@ int main(void)
 	int energia;
 } Player;
 	Player player;
-	player.energia = 23;
+	player.energia = 25;
 	player.posx = 1;
 	player.posy =5;
     int larg, alt = 0;
