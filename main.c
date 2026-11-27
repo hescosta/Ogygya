@@ -30,8 +30,8 @@ int main(void)
     printf("Altura: %d\n",alt);
     printf("Largura: %d\n",larg);
 
-    for(int i=0; i<larg+1; i++){
-   	for (int j=0; j<alt; j++){
+    for(int i=0; i<alt; i++){
+   	for (int j=0; j<larg+1; j++){
 		matrix[i][j] = getc(arq);
 	}
     }
@@ -61,9 +61,9 @@ int main(void)
 	for (int i=0; i<larg; i++){
 		for (int j=0; j<alt; j++){
 			if(matrix[i][j]=='#'){
-				DrawRectangle(i*45, j*45, 45, 45, CC);
+				DrawRectangle(i*90, j*90, 90, 90, CC);
 			}else{
-				DrawRectangle(i*45, j*45, 45, 45, MT);
+				DrawRectangle(i*90, j*90, 90, 90, MT);
 				
 			}
 		}
