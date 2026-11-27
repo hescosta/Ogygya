@@ -36,7 +36,7 @@ int main(void)
 	}
     }
 
-    print_matrix(alt, larg, matrix);
+    print_matrix(larg, alt, matrix);
 
 
 
