@@ -30,8 +30,8 @@ int main(void)
     printf("Altura: %d\n",alt);
     printf("Largura: %d\n",larg);
 
-    for(int i=0; i<alt; i++){
-   	for (int j=0; j<larg+1; j++){
+    for(int i=0; i<larg+1; i++){
+   	for (int j=0; j<alt; j++){
 		matrix[i][j] = getc(arq);
 	}
     }
@@ -58,9 +58,9 @@ int main(void)
 
 	
 	//testando grade do mapa, imprimindo retangulos 
-	for (int i=0; i<alt; i++){
-		for (int j=0; j<larg; j++){
-			if(matrix[i][j]=='#'){
+	for (int i=0; i<larg; i++){
+		for (int j=0; j<alt; j++){
+			if(matrix[j][i]=='#'){
 				DrawRectangle(i*60, j*60, 60, 60, CC);
 			}else{
 				DrawRectangle(i*60, j*60, 60, 60, MT);
