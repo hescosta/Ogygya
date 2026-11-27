@@ -36,7 +36,7 @@ int main(void)
 	}
     }
 
-    print_matrix(larg, alt, matrix);
+    print_matrix(alt, larg, matrix);
 
 
 
@@ -61,9 +61,9 @@ int main(void)
 	for (int i=0; i<alt; i++){
 		for (int j=0; j<larg; j++){
 			if(matrix[i][j]=='#'){
-				DrawRectangle(i*30, j*30, 30, 30, CC);
+				DrawRectangle(i*45, j*45, 45, 45, CC);
 			}else{
-				DrawRectangle(i*30, j*30, 30, 30, MT);
+				DrawRectangle(i*45, j*45, 45, 45, MT);
 				
 			}
 		}
