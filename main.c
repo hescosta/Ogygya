@@ -83,10 +83,10 @@ int main(void)
 		}
 	}
 
-		if(IsKeyPressed(KEY_W) && matrix[player.posy-1][player.posx] != '#'){ player.posy = player.posy -1 ;}
-		if(IsKeyPressed(KEY_S) && matrix[player.posy+1][player.posx] != '#'){ player.posy = player.posy +1 ;}
-		if(IsKeyPressed(KEY_A) && matrix[player.posy][player.posx-1] != '#'){ player.posx = player.posx -1 ;} 
-		if(IsKeyPressed(KEY_D) && matrix[player.posy][player.posx+1] != '#'){ player.posx = player.posx +1 ;}  
+		if(IsKeyPressed(KEY_W) && matrix[player.posy-1][player.posx] != '#'){ player.posy = player.posy -1 ; player.energia -1;}
+		if(IsKeyPressed(KEY_S) && matrix[player.posy+1][player.posx] != '#'){ player.posy = player.posy +1 ; player.energia -1;}}
+		if(IsKeyPressed(KEY_A) && matrix[player.posy][player.posx-1] != '#'){ player.posx = player.posx -1 ; player.energia -1;}} 
+		if(IsKeyPressed(KEY_D) && matrix[player.posy][player.posx+1] != '#'){ player.posx = player.posx +1 ; player.energia -1;}}  
 		DrawRectangle(player.posx*90, player.posy*90, 90, 90, PINK);
         EndDrawing();
         //----------------------------------------------------------------------------------
