@@ -8,7 +8,7 @@ int main(void)
 {
     // Initialization
     //--------------------------------------------------------------------------------------
-    const int screenWidth = 1080;
+    const int screenWidth = 1440;
     const int screenHeight = 720;
     int larg, alt = 0;
     char matrix[MAPA_MAX][MAPA_MAX] = {0};
