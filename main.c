@@ -30,8 +30,8 @@ int main(void)
     printf("Altura: %d\n",alt);
     printf("Largura: %d\n",larg);
 
-    for(int i=0; i<alt; i++){
-   	for (int j=0; j<larg+1; j++){
+    for(int i=0; i<larg; i++){
+   	for (int j=0; j<alt+1; j++){
 		matrix[i][j] = getc(arq);
 	}
     }
