@@ -61,9 +61,9 @@ int main(void)
 	for (int i=0; i<larg; i++){
 		for (int j=0; j<alt; j++){
 			if(matrix[i][j]=='#'){
-				DrawRectangle(i*90, j*90, 90, 90, CC);
+				DrawRectangle(i*60, j*60, 60, 60, CC);
 			}else{
-				DrawRectangle(i*90, j*90, 90, 90, MT);
+				DrawRectangle(i*60, j*60, 60, 60, MT);
 				
 			}
 		}
