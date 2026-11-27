@@ -89,7 +89,7 @@ if( matrix[player.posy][player.posx] == 'A'){player.energia = player.energia -5;
 		if(IsKeyPressed(KEY_A) && matrix[player.posy][player.posx-1] != '#'){ player.posx = player.posx -1 ; player.energia = player.energia-1;} 
 		if(IsKeyPressed(KEY_D) && matrix[player.posy][player.posx+1] != '#'){ player.posx = player.posx +1 ; player.energia = player.energia-1;}  
 		DrawRectangle(player.posx*90, player.posy*90, 90, 90, PINK);
-		if(player.energia == 0){CloseWindow(); return 0;}
+		if(player.energia <= 0){CloseWindow(); return 0;}
         EndDrawing();
 	
         //----------------------------------------------------------------------------------
