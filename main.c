@@ -10,6 +10,15 @@ int main(void)
     //--------------------------------------------------------------------------------------
     const int screenWidth = 1440;
     const int screenHeight = 720;
+	typedef struct {
+	int	posx; 
+	int	posy;
+	int energia;
+} Player;
+	Player player1;
+	player.energia = 23;
+	player1.posx = 1;
+	player1.posy =5;
     int larg, alt = 0;
     char matrix[MAPA_MAX][MAPA_MAX] = {0};
     FILE *arq;
@@ -62,7 +71,6 @@ int main(void)
 		for (int j=0; j<alt; j++){
 			if(matrix[j][i]=='#'){
 				DrawRectangle(i*90, j*90, 90, 90, CC);
-			}else if(matrix[j][i]=='P'){DrawRectangle(i*90, j*90, 90, 90, PINK);	
 			}else if(matrix[j][i]=='C'){DrawRectangle(i*90, j*90, 90, 90, YELLOW);
 			}else if(matrix[j][i]=='R'){DrawRectangle(i*90, j*90, 90, 90, GREEN);
 			}else if(matrix[j][i]=='A'){DrawRectangle(i*90, j*90, 90, 90, RED);
@@ -74,7 +82,7 @@ int main(void)
 			}
 		}
 	}
-
+DrawRectangle(player1.posx*90, player1.posy*90, 90, 90, PINK)
         EndDrawing();
         //----------------------------------------------------------------------------------
     }
