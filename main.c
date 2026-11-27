@@ -63,10 +63,10 @@ int main(void)
 			if(matrix[j][i]=='#'){
 				DrawRectangle(i*90, j*90, 90, 90, CC);
 			}else if(matrix[j][i]=='C'){DrawRectangle(i*90, j*90, 90, 90, YELLOW);
-			}else if(matrix[j][i]=='C'){DrawRectangle(i*90, j*90, 90, 90, GREEN);
-			}else if(matrix[j][i]=='C'){DrawRectangle(i*90, j*90, 90, 90, RED);
-			}else if(matrix[j][i]=='C'){DrawRectangle(i*90, j*90, 90, 90, PURPLE);
-			}else if(matrix[j][i]=='C'){DrawRectangle(i*90, j*90, 90, 90, BLUE);
+			}else if(matrix[j][i]=='R'){DrawRectangle(i*90, j*90, 90, 90, GREEN);
+			}else if(matrix[j][i]=='A'){DrawRectangle(i*90, j*90, 90, 90, RED);
+			}else if(matrix[j][i]=='E'){DrawRectangle(i*90, j*90, 90, 90, PURPLE);
+			}else if(matrix[j][i]=='S'){DrawRectangle(i*90, j*90, 90, 90, BLUE);
 			}else{
 				DrawRectangle(i*90, j*90, 90, 90, MT);
 				
