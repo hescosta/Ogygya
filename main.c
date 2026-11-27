@@ -82,7 +82,7 @@ int main(void)
 			}
 		}
 	}
-DrawRectangle(player1.posx*90, player.posy*90, 90, 90, PINK);
+DrawRectangle(player.posx*90, player.posy*90, 90, 90, PINK);
         EndDrawing();
         //----------------------------------------------------------------------------------
     }
