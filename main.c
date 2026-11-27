@@ -98,7 +98,7 @@ if( matrix[player.posy][player.posx] == 'E'){; matrix[player.posy][player.posx] 
 		if(IsKeyPressed(KEY_A) && matrix[player.posy][player.posx-1] != '#'){ player.posx = player.posx -1 ; player.energia = player.energia-1;} 
 		if(IsKeyPressed(KEY_D) && matrix[player.posy][player.posx+1] != '#'){ player.posx = player.posx +1 ; player.energia = player.energia-1;} }
 		DrawRectangle(player.posx*90, player.posy*90, 90, 90, player.cor);}
-	if(matrix[player.posy][player.posx] == '#' && player.cor == BLACK){ matrix[player.posy][player.posx] = '.'; player.cor = PINK:}
+	if(matrix[player.posy][player.posx] == '#' && player.cor == BLACK){ matrix[player.posy][player.posx] = '.'; player.cor = PINK;}
 		if(player.energia <= 0){CloseWindow(); return 0;}
         EndDrawing();
 	
