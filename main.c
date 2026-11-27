@@ -69,7 +69,7 @@ int main(void)
 	//testando grade do mapa, imprimindo retangulos
 	for (int i=0; i<larg; i++){
 		for (int j=0; j<alt; j++){
-			if(j == player.posx && i== player.posy){}
+			if((j == player.posx) && (i == player.posy)){}
 			else if(matrix[j][i]=='#'){
 				DrawRectangle(i*90, j*90, 90, 90, CC);
 			}else if(matrix[j][i]=='C'){DrawRectangle(i*90, j*90, 90, 90, YELLOW);
@@ -79,10 +79,11 @@ int main(void)
 			}else if(matrix[j][i]=='S'){DrawRectangle(i*90, j*90, 90, 90, BLUE);
 			}else{
 				DrawRectangle(i*90, j*90, 90, 90, MT);}
-				if(IsKeyDown(KEY_W)){ player.posy = player.posy -1 ;}  
+				
 		
 		}
 	}
+		if(IsKeyDown(KEY_W)){ player.posy = player.posy -1 ;}  
 		DrawRectangle(player.posx*90, player.posy*90, 90, 90, PINK);
         EndDrawing();
         //----------------------------------------------------------------------------------
