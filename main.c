@@ -2,7 +2,8 @@
 #include <stdio.h>
 #include "mapa.h"
 #include <time.h>
-
+#define DARKBROWN  (Color){ 76, 63, 47, 255 }      // Dark Brown
+#define DARKBROWN  (Color){ 76, 63, 47, 255 }      // Dark Brown
 int main(void)
 {
     // Initialization
