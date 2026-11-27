@@ -66,7 +66,8 @@ int main(void)
         ClearBackground(RAYWHITE);
 
 	
-	//testando grade do mapa, imprimindo retangulos 
+	//testando grade do mapa, imprimindo retangulos
+		if(IsKeyDown(KEY_W)){ player.posy++;} 
 	for (int i=0; i<larg; i++){
 		for (int j=0; j<alt; j++){
 			if(matrix[j][i]=='#'){
