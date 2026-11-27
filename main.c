@@ -92,7 +92,7 @@ if( matrix[player.posy][player.posx] == 'S' && player.cristais >=3){player.energ
 if( matrix[player.posy][player.posx] == 'C'){player.cristais = player.cristais +1; matrix[player.posy][player.posx] = '.';}		
 if( matrix[player.posy][player.posx] == 'R'){player.energia = player.energia +5; matrix[player.posy][player.posx] = '.';}
 if( matrix[player.posy][player.posx] == 'A'){player.energia = player.energia -5; matrix[player.posy][player.posx] = '.';}
-if( matrix[player.posy][player.posx] == 'E'){; matrix[player.posy][player.posx] = '.'; player.cor = BLACK; player.habilidade ==1;} 
+if( matrix[player.posy][player.posx] == 'E'){; matrix[player.posy][player.posx] = '.'; player.cor = BLACK; player.habilidade = 1;} 
 		if(player.habilidade==1) {}
 		else if( 1==1){
 		if(IsKeyPressed(KEY_W) && matrix[player.posy-1][player.posx] != '#'){ player.posy = player.posy -1 ; player.energia = player.energia-1;}
