@@ -16,6 +16,7 @@ int main(void)
 	int energia;
 	int cristais;
 	Color cor;
+	int habilidade;
 } Player;
 	Player player;
 	player.energia = 25;
@@ -23,6 +24,7 @@ int main(void)
 	player.posy =5;
 	player.cristais =0;
 	player.cor = PINK;
+	player.habilidade = 0;
     int larg, alt = 0;
     char matrix[MAPA_MAX][MAPA_MAX] = {0};
     FILE *arq;
@@ -91,15 +93,15 @@ if( matrix[player.posy][player.posx] == 'C'){player.cristais = player.cristais +
 if( matrix[player.posy][player.posx] == 'R'){player.energia = player.energia +5; matrix[player.posy][player.posx] = '.';}
 if( matrix[player.posy][player.posx] == 'A'){player.energia = player.energia -5; matrix[player.posy][player.posx] = '.';}
 if( matrix[player.posy][player.posx] == 'E'){; matrix[player.posy][player.posx] = '.'; player.cor = BLACK;} 
-		if(player.cor == BLACK) {}
-		else if(){
+		if(player.habilidade==1) {}
+		else if( 1==1){
 		if(IsKeyPressed(KEY_W) && matrix[player.posy-1][player.posx] != '#'){ player.posy = player.posy -1 ; player.energia = player.energia-1;}
 		if(IsKeyPressed(KEY_S) && matrix[player.posy+1][player.posx] != '#'){ player.posy = player.posy +1 ; player.energia = player.energia-1;}
 		if(IsKeyPressed(KEY_A) && matrix[player.posy][player.posx-1] != '#'){ player.posx = player.posx -1 ; player.energia = player.energia-1;} 
 		if(IsKeyPressed(KEY_D) && matrix[player.posy][player.posx+1] != '#'){ player.posx = player.posx +1 ; player.energia = player.energia-1;}
 		}
 		DrawRectangle(player.posx*90, player.posy*90, 90, 90, player.cor);}
-	if(matrix[player.posy][player.posx] == '#' && player.cor == BLACK){ matrix[player.posy][player.posx] = '.'; player.cor = PINK;}
+	if(matrix[player.posy][player.posx] == '#' && player.habilidade==1){ matrix[player.posy][player.posx] = '.'; player.cor = PINK;}
 		if(player.energia <= 0){CloseWindow(); return 0;}
         EndDrawing();
 	
