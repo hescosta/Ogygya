@@ -82,7 +82,7 @@ int main(void)
 		
 		}
 	}
-if( matrix[player.posy][player.posx] == 'C'){player.energia+1; matrix[player.posy][player.posx] = '.';}
+if( matrix[player.posy][player.posx] == 'C'){player.energia = player.energia +1; matrix[player.posy][player.posx] = '.';}
 		if(IsKeyPressed(KEY_W) && matrix[player.posy-1][player.posx] != '#'){ player.posy = player.posy -1 ; player.energia = player.energia-1;}
 		if(IsKeyPressed(KEY_S) && matrix[player.posy+1][player.posx] != '#'){ player.posy = player.posy +1 ; player.energia = player.energia-1;}
 		if(IsKeyPressed(KEY_A) && matrix[player.posy][player.posx-1] != '#'){ player.posx = player.posx -1 ; player.energia = player.energia-1;} 
