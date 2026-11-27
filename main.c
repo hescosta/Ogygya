@@ -14,11 +14,15 @@ int main(void)
 	int	posx; 
 	int	posy;
 	int energia;
+	int cristais;
+	Color cor;
 } Player;
 	Player player;
 	player.energia = 25;
 	player.posx = 1;
 	player.posy =5;
+	player.cristais =0;
+	player.cor = PINK;
     int larg, alt = 0;
     char matrix[MAPA_MAX][MAPA_MAX] = {0};
     FILE *arq;
@@ -82,6 +86,8 @@ int main(void)
 		
 		}
 	}
+if( matrix[player.posy][player.posx] == 'S' && player.cristais >=3){player.energia = player.energia + 999999; matrix[player.posy][player.posx] = '.'; player.cor = GREEN; }	
+if( matrix[player.posy][player.posx] == 'C'){player.cristais = player.cristais +1; matrix[player.posy][player.posx] = '.';}		
 if( matrix[player.posy][player.posx] == 'R'){player.energia = player.energia +5; matrix[player.posy][player.posx] = '.';}
 if( matrix[player.posy][player.posx] == 'A'){player.energia = player.energia -5; matrix[player.posy][player.posx] = '.';}
 		if(IsKeyPressed(KEY_W) && matrix[player.posy-1][player.posx] != '#'){ player.posy = player.posy -1 ; player.energia = player.energia-1;}
