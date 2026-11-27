@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include "mapa.h"
 #include <time.h>
-#define CC  (Color){ 82, 87, 99, 255 }      // Cinza para Caverna
+#define CC  (Color){52, 56, 66, 255 }      // Cinza para Caverna
 #define MT  (Color){ 122, 86, 62, 255 }      // Marrom de Trilha
 int main(void)
 {
