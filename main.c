@@ -62,6 +62,11 @@ int main(void)
 		for (int j=0; j<alt; j++){
 			if(matrix[j][i]=='#'){
 				DrawRectangle(i*90, j*90, 90, 90, CC);
+			}else if(matrix[j][i]=='C'){DrawRectangle(i*90, j*90, 90, 90, YELLOW);
+			}else if(matrix[j][i]=='C'){DrawRectangle(i*90, j*90, 90, 90, GREEN);
+			}else if(matrix[j][i]=='C'){DrawRectangle(i*90, j*90, 90, 90, RED);
+			}else if(matrix[j][i]=='C'){DrawRectangle(i*90, j*90, 90, 90, PURPLE);
+			}else if(matrix[j][i]=='C'){DrawRectangle(i*90, j*90, 90, 90, BLUE);
 			}else{
 				DrawRectangle(i*90, j*90, 90, 90, MT);
 				
