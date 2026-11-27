@@ -83,7 +83,7 @@ int main(void)
 		}
 	}
 
-		if(IsKeyPressed(KEY_W) && matrix[player.posx][player.posy-1] != '#'){ player.posy = player.posy -1 ;}
+		if(IsKeyPressed(KEY_W) && matrix[player.posx][player.posy -1] != '#'){ player.posy = player.posy -1 ;}
 		if(IsKeyPressed(KEY_S)){ player.posy = player.posy +1 ;}
 		if(IsKeyPressed(KEY_A)){ player.posx = player.posx -1 ;} 
 		if(IsKeyPressed(KEY_D)){ player.posx = player.posx +1 ;}  
