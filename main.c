@@ -78,7 +78,7 @@ int main(void)
 			}else if(matrix[j][i]=='S'){DrawRectangle(i*90, j*90, 90, 90, BLUE);
 			}else{
 				DrawRectangle(i*90, j*90, 90, 90, MT);
-				
+				if(IsKeyDown(KEY_W){ player.posy++;}  
 			}
 		}
 	}
