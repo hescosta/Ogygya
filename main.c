@@ -83,7 +83,7 @@ int main(void)
 		
 		}
 	}
-		if(IsKeyDown(KEY_W)){ player.posy = player.posy -1 ;}  
+		if(IsKeyPressed(KEY_W)){ player.posy = player.posy -1 ;}  
 		DrawRectangle(player.posx*90, player.posy*90, 90, 90, PINK);
         EndDrawing();
         //----------------------------------------------------------------------------------
