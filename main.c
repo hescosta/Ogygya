@@ -58,8 +58,8 @@ int main(void)
 
 	
 	//testando grade do mapa, imprimindo retangulos 
-	for (int i=0; i<larg; i++){
-		for (int j=0; j<alt; j++){
+	for (int i=0; i<alt; i++){
+		for (int j=0; j<larg; j++){
 			if(matrix[i][j]=='#'){
 				DrawRectangle(i*60, j*60, 60, 60, CC);
 			}else{
