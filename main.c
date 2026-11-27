@@ -15,10 +15,10 @@ int main(void)
 	int	posy;
 	int energia;
 } Player;
-	Player player1;
+	Player player;
 	player.energia = 23;
-	player1.posx = 1;
-	player1.posy =5;
+	player.posx = 1;
+	player.posy =5;
     int larg, alt = 0;
     char matrix[MAPA_MAX][MAPA_MAX] = {0};
     FILE *arq;
@@ -82,7 +82,7 @@ int main(void)
 			}
 		}
 	}
-DrawRectangle(player1.posx*90, player1.posy*90, 90, 90, PINK)
+DrawRectangle(player1.posx*90, player.posy*90, 90, 90, PINK);
         EndDrawing();
         //----------------------------------------------------------------------------------
     }
