@@ -2,8 +2,8 @@
 #include <stdio.h>
 #include "mapa.h"
 #include <time.h>
-#define DARKBROWN  (Color){ 76, 63, 47, 255 }      // Dark Brown
-#define DARKBROWN  (Color){ 76, 63, 47, 255 }      // Dark Brown
+#define CC  (Color){ 82, 87, 99, 255 }      // Cinza para Caverna
+#define MT  (Color){ 122, 86, 62, 255 }      // Marrom de Trilha
 int main(void)
 {
     // Initialization
@@ -61,9 +61,9 @@ int main(void)
 	for (int i=0; i<alt; i++){
 		for (int j=0; j<larg; j++){
 			if(matrix[i][j]=='#'){
-				DrawRectangle(i*30, j*30, 30, 30, DARKGRAY);
+				DrawRectangle(i*30, j*30, 30, 30, CC);
 			}else{
-				DrawRectangle(i*30, j*30, 30, 30, DARKBROWN);
+				DrawRectangle(i*30, j*30, 30, 30, MT);
 				
 			}
 		}
